@@ -1,8 +1,24 @@
-// toggler
-function myFunction() {
-    var element = document.body;
-    element.classList.toggle("darkMode");
-}
+// Dark Mode toggler
+var toggler_p = $("#toggle-p");
+
+$(".mode-toggler").click(function () {
+
+    $("body, html").toggleClass("darkMode");
+
+    if (toggler_p.text() == "Go Dark")
+        toggler_p.text("Go Light");
+    else
+        toggler_p.text("Go Dark");
+});
+
+//  ------ scrollBar -------
+
+// window.addEventListener('scroll', this.handleScroll, true);
+// handleScroll = (e) => {
+//     if (e.target.classList.contains("on-scrollbar") === false) {
+//         e.target.classList.add("on-scrollbar");
+//     }
+// }
 
 
 // ----- Loader  --- Gsap 
@@ -26,9 +42,9 @@ tl.to(".intro", {
 }, "-=1");
 
 //Important -- till the final responsive layout is ready
-if (window.matchMedia("(min-width: 769px)").matches) {
-    tl.fromTo("#mother-container", { autoAlpha: "0", display: "none" }, { autoAlpha: "1", display: "block" }, "-=1");
-}
+// if (window.matchMedia("(min-width: 769px)").matches) {
+//     tl.fromTo("#mother-container", { autoAlpha: "0", display: "none" }, { autoAlpha: "1", display: "block" }, "-=1");
+// }
 
 // tl.fromTo("#mother-container", { autoAlpha: "0", display: "none" }, { autoAlpha: "1", display: "block" }, "-=1");
 

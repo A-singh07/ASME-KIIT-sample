@@ -25,13 +25,13 @@ $sidebar: #c9e4f5;
 $nav_hover: #b6d8f0;
 
 $progress_line: linear-gradient(to right, #367dad 0%, #7fdbd7 100%);
-$step_active: #367dad;
+$step_active: #2d719e;
 $step_hover: $step_active;
 $content_timeline: #d9ecf2;
 
 $team_tabs: #ddf3fa;
 $team_tabs_hover: #b6d8f0;
-$team_tab_hover_shadow: 0px 5px 10px rgba(177, 211, 252, 0.76);
+$team_tab_hover_shadow: 0px 4px 10px rgba(177, 211, 252, 0.76);
 $team_tab_active:#5ca9dd;
 
 $footer: #c9e4f5;
@@ -47,47 +47,50 @@ $linkedin_color: #1b7aa7;
 
 
 
-/* --------- DARK THEME ---------- */
+/* ------------- DARK THEME ------------- */
 
-$drk_bg_section: #333333;
-$drk_main_container: #333333;
+$drk_bg_section: #121212; // dark grey
+$drk_main_container: $drk_bg_section;
 
 // $drk_intro: #1b262c;
 // $drk_intro_slider: #b9d7ea;
 
-$drk_scroll_thumb: #614c2d;
-$drk_scroll_thumb_hover: #433520;
+$drk_scroll_thumb: #68089c;
+$drk_scroll_thumb_hover: #8024b1;
 
-$drk_landing_cover: rgba(178, 217, 230, 0.5); //skyBlue with alpha 0.5
-$drk_bg_text-one: rgba(178, 217, 230, 0.95);  //skyBLue with alpha 0.95
+$drk_landing_cover: #2e213d;
 
-$drk_h1_bg: #e7dec8;
+$drk_h1_bg: #68089c;
+$drk_hr: 10px dotted #4f3e64;
 
-$drk_section_shadows: -2px -2px 20px 2px #cbaf87 inset;
+$drk_section_shadows: -2px -2px 20px 2px #6f2a94 inset;
 
-$drk_nav_top:#cbaf87;
+$drk_darkMode_button: #272727;
+$drk_darkMode_button_hover: #3d3d3d;
+
+$drk_nav_top:#68089c;
 $drk_ham_close: white;
-$drk_sidebar: #e7dec8;
-$drk_nav_hover: #faf3e3;
+// $drk_sidebar: #bc6ff1; //pk
+$drk_sidebar: #c79efa;
+$drk_nav_hover: #b880fc;
 
-$drk_progress_line: linear-gradient(to right, #614c2c 0%, #c5a370 100%);
-$drk_step_active: #614c2d;
+$drk_line: #dcc0fd;
+$drk_progress_line: linear-gradient(to right, #730cb8 0%, #cf4fd8 100%);
+$drk_step_active: #730cb8;
+$drk_step_circle: #dcc0fd;
 $drk_step_hover: $step_active;
-$drk_content_timeline: #f3e9cf;
+$drk_content_timeline: #c79efa;
 
-$drk_team_tabs: #e7dec8;
+$drk_team_tabs: $drk_sidebar;
 $drk_team_tabs_hover: $drk_nav_top;
-$drk_team_tab_hover_shadow: 0px 5px 10px rgba(177, 211, 252, 0.76);
+$drk_team_tab_hover_shadow: 0px 4px 10px #eb77ff97;
 $drk_team_tab_active: $drk_nav_top;
 
-$drk_footer: #e2d2aa;
-$drk_footer_a: black;
-
-// color for social media Icons
-$drk_facebook_color:#4267B2;
-$drk_instagram_color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-$drk_twitter_color:#00acee;
-$drk_linkedin_color: #1b7aa7;
+$drk_footer: rgb(0, 0, 0);
+$drk_footer_a:white;
+$drk_footer_shadow: 0 -2px 20px 2px #6f2a94;
+$drk_footer_logo_shadow: -1px -1px 20px 2px #7d479b;
+$drk_footer_hr: 0 10px 10px -8px #7d479b inset;
 
 /* -----XX----- DARK THEME -----XX----- */
 

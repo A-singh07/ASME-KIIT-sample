@@ -16,13 +16,25 @@
             background-color: $drk_h1_bg ;
         }
         hr{
-            border-top: 10px dotted #e7dec8;
+            border-top: $drk_hr;
         }
 
 
         #mother-container{
 
             color: white;
+
+            .mode-toggler{
+                background-color: $drk_darkMode_button;
+
+                &:hover{
+                    background-color: $drk_darkMode_button_hover;
+                }
+            }
+
+            .landing-cover{
+                background: $drk_landing_cover;
+            }
 
             #nav{
                 background-color: $drk_nav_top;
@@ -44,6 +56,7 @@
 
             section{
                 background-color: $drk_bg_section;
+                h1{color: white;}
             
                 .main-container{
             
@@ -57,16 +70,30 @@
             
                     #achivements{
                         @include sections_headings;
-                        h1{color: black;}
             
                         .timeline-wrapper{
                             background-color: $drk_bg_section;
                             box-shadow: $drk_section_shadows;
 
                             #progress-bar{
-                                color: black;
+                                color: white;
+
+                                ul{
+                                    li{
+                                        &::after{
+                                            background-color: $drk_step_circle;
+                                        }
+                                        &:hover::after{
+                                            background-color: $drk_step_hover;
+                                        }
+                                    }
+                                    .tl-active::after{
+                                        background-color: $drk_step_active;
+                                    }
+                                }
 
                                 #line{
+                                    background-color: $drk_line;
                                     #progress-line{
                                         background: $drk_progress_line;
                                     }
@@ -87,7 +114,6 @@
             
                     #gallery{
                         @include sections_headings;
-                        h1{color: black;}
             
                         .gallery-shadow{
                             background-color: $drk_bg_section;
@@ -97,7 +123,6 @@
             
                     #team{
                         @include sections_headings;
-                        h1{color: black;}
                         height: 100vh;
                         .tab-wrap{
             
@@ -106,10 +131,12 @@
                                 &:hover{
                                     background-color: $drk_team_tabs_hover;
                                     box-shadow: $drk_team_tab_hover_shadow;
+                                    color: white;
                                 }
                             }
                             .tab-active{
                                 background-color: $drk_team_tab_active;
+                                color: white;
                             }
                         }
                         .content-container{
@@ -120,7 +147,6 @@
             
                     #sponsors{
                         @include sections_headings;
-                        h1{color: black;}
             
                         .sponsors-wrapper{
                             background-color: $drk_bg_section;
@@ -130,16 +156,22 @@
                 }
             }
             .site-footer{
+                box-shadow: $drk_footer_shadow;
                 background-color: $drk_footer;
+
+                #footer-logo img{
+                    box-shadow: $drk_footer_logo_shadow;
+                }
+            
                 h6{
                     
-                    color: black;
+                    color: white;
                 }
                 .designers{
-                    color: black;
+                    color: white;
                 }
                 .mailid{
-                    color:black;
+                    color:white;
             
                     &:hover{
                         color: grey;
@@ -148,8 +180,10 @@
                 a{
                     color: $drk_footer_a;
                 }
-                hr{
-                    display: none;
+                .foothr
+                {
+                    border: 0px solid;
+                    box-shadow: $drk_footer_hr;
                 }
             }
         }

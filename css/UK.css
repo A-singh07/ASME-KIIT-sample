@@ -20,6 +20,7 @@
     box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.3);
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.25s ease;
 }
 
 .mode-toggler:hover
@@ -30,7 +31,7 @@
 
 .mode-toggler p
 {
-    /* padding-top: 5px; */
+    margin: 0;
     text-align: center;
     color: blanchedalmond;
 }
@@ -154,7 +155,8 @@
 .sidebar ul li
 {
     width: 100%;
-    padding: 10px 0;
+    /* height: 90px; */
+    padding: 15px 0;
     transition: 0.3s ease;
     /* background-color: blueviolet; */
 
@@ -249,7 +251,7 @@
     outline: none;
     cursor: pointer;
     padding: 14px 20px;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     border-radius: 1.1em;
     font-size: 1em;
 }
