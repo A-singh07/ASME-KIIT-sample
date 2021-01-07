@@ -42,9 +42,11 @@
   width: 9rem;
   height: 9rem;
   border-radius: 10%;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.25s ease-in-out;
 }
 .brand_image:hover{
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.3);
   transition: 0.5s;
 }
 
