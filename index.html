@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon_icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./Assets/favicon_icon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon_icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon_icon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- my Font Awesome -->
+    <script src="https://kit.fontawesome.com/eb59bb629c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!--Swiper.css-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="./css/UK.css">
+    <link rel="stylesheet" href="./css/AS.css">
+    <link rel="stylesheet" href="./css/PK.css">
+
+    <title>ASME-KIIT</title>
+</head>
+
+<body>
+
+    <!-- mobile Info -->
+
+    <div class="mobile-info">
+        <h2>The mobile/tablet version of this site is under development.</h2>
+        <h2>We'll be available soon. <br><br> Till then enjoy the desktop version <br> <br><br> Cheers!!</h2>
+    </div>
+
+
+    <!-- Loader using Gsap-->
+
+    <div class="intro">
+        <div class="intro-text">
+            <h2 class="hide">
+                <span class="hide-text">Passion</span>
+            </h2>
+            <h2 class="hide">
+                <span class="hide-text">Ambition</span>
+            </h2>
+            <h2 class="hide">
+                <span class="hide-text">Determination</span>
+            </h2>
+        </div>
+    </div>
+    <div class="intro-slider"></div>
+
+    <!-- XX---Loader---XX -->
+
+    <!-- ------ Mother-Container ------ -->
+
+    <div id="mother-container">
+
+        <div onclick="myFunction()" class="mode-toggler">
+            <p>DON'T <br> :(</p>
+        </div>
+
+        <div id="logo">
+            <img src="./Assets/ASME-logo.jpeg" alt="ASME-KIIT logo">
+        </div>
+
+        <!-- Landing Page -->
+        <div class="landing-cover"></div>
+        <div class="landing-slider" id="home" class="carousel slide carousel-fade" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block" src="./Assets/c-image1.jpeg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block" src="./Assets/c-image2.jpeg" alt="Second slide">
+                </div>
+                <!-- <div class="carousel-item">
+                    <img class="d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg"
+                        alt="Third slide">
+                </div> -->
+            </div>
+            <div class="text-one">
+                <p>
+                    ASME <br>
+                    KIIT
+                </p>
+            </div>
+        </div>
+
+
+        <!-- XX---Landing Page---XX -->
+
+        <!-- Side Nav -->
+        <div id="nav">
+            <i id="hamburger" class="fas fa-bars"></i>
+            <i id="nav-close" class="fa fa-times"></i>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a class="nav-link" href="#home"><i class="fa fa-home"></i><span class="nav-text">Home</span></a>
+                </li>
+                <li><a class="nav-link" href="#about"><i class="fa fa-info-circle"></i><span
+                            class="nav-text">About</span></a></li>
+                <li><a class="nav-link" href="#achivements"><i class="fa fa-trophy"></i><span
+                            class="nav-text">Achivements</span></a>
+                </li>
+                <li><a class="nav-link" href="#gallery"><i class="fa fa-camera"></i><span
+                            class="nav-text">Gallery</span></a>
+                </li>
+                <li><a class="nav-link" href="#team"><i class="fa fa-users"></i><span class="nav-text">Team</span></a>
+                </li>
+                <li><a class="nav-link" href="#sponsors"><i class="fa fa-handshake"></i><span
+                            class="nav-text">Sponsors</span></a></li>
+                <li><a class="nav-link" href="#contact"><i class="fa fa-id-card"></i><span
+                            class="nav-text">Contact</span></a></li>
+            </ul>
+        </div>
+
+        <!-- XX---Side Nav---XX -->
+
+        <!-- ------- Main section of the Page --------- -->
+        <section>
+
+            <div class="main-container">
+                <!-- About -->
+                <div class="about" id="about">
+                    <h2 data-aos="fade-right" data-aos-duration="1500">About</h2>
+                    <p data-aos="fade-left" data-aos-duration="1500">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Voluptas
+                        blanditiis accusamus fugit?
+                        Ratione
+                        repellendus officia magnam iure aut tenetur neque voluptate blanditiis necessitatibus, qui est
+                        provident
+                        asperiores numquam voluptas porro explicabo dolorem. Fuga, maiores ratione. Distinctio, placeat
+                        mollitia
+                        ipsam sed dolorem neque suscipit illum natus error recusandae corrupti, aliquid expedita, eius
+                        pariatur
+                        quo incidunt! Et dignissimos est fugit, obcaecati quam odio ducimus velit unde quis consequuntur
+                        necessitatibus aperiam omnis soluta?</p>
+                </div>
+                <hr>
+                <br>
+                <br>
+                <!-- XX---About---XX -->
+
+                <!-- Timeline -->
+                <div class="timeline" id="achivements">
+                    <h1>Achivements</h1>
+                    <br>
+                    <div class="timeline-wrapper">
+                        <div id="progress-bar">
+                            <ul>
+                                <li class="step tl-active" onclick="activeFunc('1')">
+                                    <div class="step-inner">2014</div>
+                                </li>
+                                <li class="step tl-active" onclick="activeFunc('2')">
+                                    <div class="step-inner">2015</div>
+                                </li>
+                                <li class="step tl-active" onclick="activeFunc('3')">
+                                    <div class="step-inner">2016</div>
+                                </li>
+                                <li class="step tl-active" onclick="activeFunc('4')">
+                                    <div class="step-inner">2017</div>
+                                </li>
+                                <li class="step tl-active" onclick="activeFunc('5')">
+                                    <div class="step-inner">2018</div>
+                                </li>
+                                <li class="step tl-active" onclick="activeFunc('6')">
+                                    <div class="step-inner">2019</div>
+                                </li>
+                                <li class="step tl-active" onclick="activeFunc('7')">
+                                    <div class="step-inner">2020</div>
+                                </li>
+                            </ul>
+
+                            <div id="line">
+                                <div id="progress-line"></div>
+                            </div>
+                        </div>
+
+                        <div id="timeline-content-wrapper" data-aos="zoom-in-up" data-aos-duration="1500">
+                            <div class="content-timeline content1">
+                                <p>3rd in Design <br>2nd in Drag</p>
+                            </div>
+                            <div class="content-timeline content2">
+                                <p>17th Overall</p>
+                            </div>
+                            <div class="content-timeline content3">
+                                <p>2nd Overall</p>
+                            </div>
+                            <div class="content-timeline content4">
+                                <p>2nd Endurance</p>
+                            </div>
+                            <div class="content-timeline content5">
+                                <p>19th Overall</p>
+                            </div>
+                            <div class="content-timeline content6">
+                                <p>1st in Endurance <br> 3rd Overall</p>
+                            </div>
+                            <div class="content-timeline content7  cnt-active">
+                                <p>6th in Drag <br>6th Overall </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <hr>
+                <br>
+                <!-- XX---Timeline---XX -->
+
+                <!-- Gallery -->
+                <div class="gallery" id="gallery">
+                    <h1>Gallery</h1>
+                    <br>
+                    <div class="gallery-shadow">
+                        <div class="swiper-container" data-aos="zoom-in" data-aos-duration="1500">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image1.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image2.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image3.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image4.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image1.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image2.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image3.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image4.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image2.jpeg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- XX---Gallery---XX -->
+                <hr>
+                <br>
+
+                <!-- ----- Our Team ----- -->
+
+                <div class="team" id="team">
+                    <h1>Our Team</h1>
+                    <div class="tab-wrap">
+                        <button class="tabs tab-active" id="t-1" onclick="activeCont('tc-1')">All</button>
+                        <button class="tabs" id="t-2" onclick="activeCont('tc-2')">Manufacturing</button>
+                        <button class="tabs" id="t-3" onclick="activeCont('tc-3')">Marketting</button>
+                        <button class="tabs" id="t-4" onclick="activeCont('tc-4')">Design and Design Report</button>
+                        <button class="tabs" id="t-5" onclick="activeCont('tc-5')">Riding</button>
+                    </div>
+
+                    <div class="content-container">
+                        <div class="t-content t-content-active" id="tc-1">
+
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row2">
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="t-content" id="tc-2">
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="t-content" id="tc-3">
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="t-content" id="tc-4">
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="t-content" id="tc-5">
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- XX --- content container ---XX  -->
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <!-- XX----- Our Team -----XX -->
+
+                <!-- Sponsors&Partners -->
+                <div class="sponsors" id="sponsors">
+                    <h1>Sponsors & Partners</h1>
+                    <div class="sponsors-wrapper">
+                        <div class="sponsors-container" data-aos="zoom-in" data-aos-duration="1500">
+                            <div class="flex-container">
+                                <a href="https://www.bosch.com/" target="_blank"><img src="./Assets/bosch.jpg"
+                                        class="brand_image"></a>
+                                <a href="https://www.fallbrooktech.com/nuvinci-technology/" target="_blank"><img
+                                        src="./Assets/nuvinvi.png" class="brand_image"></a>
+                                <a href="https://asaptechnology.websites.co.in/" target="_blank"><img
+                                        src="./Assets/asapTech.jpeg" class="brand_image"></a>
+                            </div>
+                            <div class="flex-container">
+                                <a href="https://www.scolarianracing.com/" target="_blank"> <img
+                                        src="./Assets/scholarian.png" class="brand_image"></a>
+                                <a href="https://www.trackandtrail.in/" target="_blank"> <img src="./Assets/Track.png"
+                                        class="brand_image"></a>
+                                <a href="https://www.we-online.com/web/en/wuerth_elektronik/start.php" target="_blank">
+                                    <img src="./Assets/wurth.png" class="brand_image"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- XX---Sponsors&Partners---XX -->
+            </div>
+
+        </section>
+
+        <!-- ------XX------ Main section of the Page ------XX------ -->
+
+        <!-- Footers -->
+
+        <footer class="site-footer" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div id="footer-logo" class="col-xs-12 col-md-4">
+
+                        <img src="./Assets/ASME-logo.jpeg" alt="Asme Kiit Logo">
+
+                    </div>
+
+                    <div class="col-xs-12 col-md-4">
+                        <h6>REACH OUT TO US</h6>
+                        <ul>
+                            <a target="_blank" href="https://instagram.com/asme_kiit"> <i
+                                    class="fab fa-instagram  fa-3x " style=" margin:15px; font-size:2'.3'em"></i></a>
+
+
+                            <a target="_blank" href="https://in.linkedin.com/company/kiit-asme"> <i
+                                    class="fab fa-linkedin fa-3x " style=" margin:15px; font-size:2.3m"></i></a>
+                            <li style="margin:5px">
+                                <h5 class="mailid"><i class="fas fa-envelope "></i>-teamketav2020@gmail.com</h5>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12 col-md-4" id="designer-footer">
+                        <h6>Website Designed By</h6>
+                        <ul class="designers">
+
+                            <li>Aman Singh
+                                <a target="_blank" href="https://instagram.com/aman07s"> <i class="fab fa-instagram   "
+                                        style=" margin:5px"></i></a>
+                                <a target="_blank" href="https://in.linkedin.com"> <i class="fab fa-linkedin  "
+                                        style=" margin:5px"></i></a>
+                            </li>
+
+                            <li>Priyanshu Kakkad
+                                <a target="_blank" href="https://instagram.com/priyansxu"> <i
+                                        class="fab fa-instagram   " style=" margin:5px"></i></a>
+                                <a target="_blank" href="https://in.linkedin.com">
+                                    <i class="fab fa-linkedin  " style=" margin:5px"></i></a>
+                            </li>
+                            <li>Utkarsh Keerti
+                                <a target="_blank" href="https://instagram.com/utkarsh_keerti"> <i
+                                        class="fab fa-instagram  " style=" margin:5px"></i></a><a target="_blank"
+                                    href="https://in.linkedin.com/company/kiit-asme"> <i class="fab fa-linkedin  "
+                                        style=" margin:5px"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="foothr">
+            </div>
+
+            <div class="container" id="copyright">
+                <div class="row">
+                    <div class="col-md-12 col-sm-6 col-xs-12">
+                        <div class="text-center p-3">
+                            © 2020 Copyright:
+                            <a>ASME KIIT </a>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12"></div>
+                    </div>
+                </div>
+        </footer>
+
+
+        <!-- XX---Footer---XX -->
+
+    </div>
+    <!-- ---XX--- Mother-Container ---XX--- -->
+
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!--Swiper.js-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"
+        integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA=="
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Gsap.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Custom JS File -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

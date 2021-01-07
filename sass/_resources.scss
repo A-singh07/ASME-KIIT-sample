@@ -1,0 +1,143 @@
+/* ---------- Color Themes ----------- */
+
+/* --- BLUE THEME --- */
+
+$bg_section: #f8eee4;  // light-creme2
+$bg_section: #f7fbfc;
+$main_container: #f7fbfc;
+
+$intro: #1b262c;
+$intro_slider: #b9d7ea;
+
+$scroll_thumb: #8cc4e9;
+$scroll_thumb_hover: #75b3dd;
+
+$landing_cover: rgba(178, 217, 230, 0.5); //skyBlue with alpha 0.5
+$bg_text-one: rgba(178, 217, 230, 0.95);  //skyBLue with alpha 0.95
+
+$h1_bg: #b9d7ea;
+
+$section_shadows: -2px -2px 20px 2px #58a5b84d inset;
+
+$nav_top:#5093c0;
+$ham_close: white;
+$sidebar: #c9e4f5;
+$nav_hover: #b6d8f0;
+
+$progress_line: linear-gradient(to right, #367dad 0%, #7fdbd7 100%);
+$step_active: #367dad;
+$step_hover: $step_active;
+$content_timeline: #d9ecf2;
+
+$team_tabs: #ddf3fa;
+$team_tabs_hover: #b6d8f0;
+$team_tab_hover_shadow: 0px 5px 10px rgba(177, 211, 252, 0.76);
+$team_tab_active:#5ca9dd;
+
+$footer: #c9e4f5;
+$footer_a: black;
+
+// color for social media Icons
+$facebook_color:#4267B2;
+$instagram_color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+$twitter_color:#00acee;
+$linkedin_color: #1b7aa7;
+
+/* --XX-- BLUE THEME --XX-- */
+
+
+
+/* --------- DARK THEME ---------- */
+
+$drk_bg_section: #333333;
+$drk_main_container: #333333;
+
+// $drk_intro: #1b262c;
+// $drk_intro_slider: #b9d7ea;
+
+$drk_scroll_thumb: #614c2d;
+$drk_scroll_thumb_hover: #433520;
+
+$drk_landing_cover: rgba(178, 217, 230, 0.5); //skyBlue with alpha 0.5
+$drk_bg_text-one: rgba(178, 217, 230, 0.95);  //skyBLue with alpha 0.95
+
+$drk_h1_bg: #e7dec8;
+
+$drk_section_shadows: -2px -2px 20px 2px #cbaf87 inset;
+
+$drk_nav_top:#cbaf87;
+$drk_ham_close: white;
+$drk_sidebar: #e7dec8;
+$drk_nav_hover: #faf3e3;
+
+$drk_progress_line: linear-gradient(to right, #614c2c 0%, #c5a370 100%);
+$drk_step_active: #614c2d;
+$drk_step_hover: $step_active;
+$drk_content_timeline: #f3e9cf;
+
+$drk_team_tabs: #e7dec8;
+$drk_team_tabs_hover: $drk_nav_top;
+$drk_team_tab_hover_shadow: 0px 5px 10px rgba(177, 211, 252, 0.76);
+$drk_team_tab_active: $drk_nav_top;
+
+$drk_footer: #e2d2aa;
+$drk_footer_a: black;
+
+// color for social media Icons
+$drk_facebook_color:#4267B2;
+$drk_instagram_color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+$drk_twitter_color:#00acee;
+$drk_linkedin_color: #1b7aa7;
+
+/* -----XX----- DARK THEME -----XX----- */
+
+
+/* ------- FONTS -------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
+
+$font_landing: 'Red Hat Display', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,700&display=swap');
+
+$font_landing2: 'Playfair Display', serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+$font1: 'Quicksand', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap');
+
+$font2: 'Merriweather', serif;
+
+
+// Rotis Semi Serif
+
+@font-face{
+    font-family: rotis_semi_serif;
+    src: url(../Assets/FONTS/RotisSemiSerifStd.otf);
+}
+
+$font_rotis_head: rotis_semi_serif;
+
+// Rotis Serif
+
+@font-face{
+    font-family: rotis_serif;
+    src: url(../Assets/FONTS/RotisSerif.otf);
+}
+
+$font_rotis: rotis_serif;
+
+
+/* ------- Responsive layout ------- */
+
+// Breakpoints
+$mobileS: 320px;
+$mobileM: 375px;
+$mobileL: 425px;
+$tablet: 768px;
+$laptop: 1024px;
+$laptopL: 1366px;
+$laptopXL: 1920px;
+$display_4k: 2560px;
