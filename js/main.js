@@ -1,8 +1,4 @@
 // Dark Mode toggler
-// function myFunction() {
-//     var element = document.body;
-//     element.classList.toggle("darkMode");
-// }
 var toggler_p = $("#toggle-p");
 
 $(".mode-toggler").click(function () {
@@ -46,9 +42,9 @@ tl.to(".intro", {
 }, "-=1");
 
 //Important -- till the final responsive layout is ready
-// if (window.matchMedia("(min-width: 769px)").matches) {
-//     tl.fromTo("#mother-container", { autoAlpha: "0", display: "none" }, { autoAlpha: "1", display: "block" }, "-=1");
-// }
+if (window.matchMedia("(min-width: 769px)").matches) {
+    tl.fromTo("#mother-container", { autoAlpha: "0", display: "none" }, { autoAlpha: "1", display: "block" }, "-=1");
+}
 
 // tl.fromTo("#mother-container", { autoAlpha: "0", display: "none" }, { autoAlpha: "1", display: "block" }, "-=1");
 
