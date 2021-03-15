@@ -1,190 +1,209 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-    .darkMode{
+.darkMode {
 
-        ::-webkit-scrollbar-thumb{
-            background-color: $drk_scroll_thumb;
-        }
-        ::-webkit-scrollbar-thumb:hover{
-            background-color: $drk_scroll_thumb_hover;
-        }
+  ::-webkit-scrollbar-thumb {
+    background-color: $drk_scroll_thumb;
+  }
 
-        h1{
-            background-color: $drk_h1_bg ;
-        }
-        hr{
-            border-top: $drk_hr;
-        }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: $drk_scroll_thumb_hover;
+  }
+
+  h1 {
+    background-color: $drk_h1_bg;
+  }
+
+  hr {
+    border-top: $drk_hr;
+  }
 
 
-        #mother-container{
+  #mother-container {
 
-            color: white;
+    color: white;
 
-            .mode-toggler{
-                background-color: $drk_darkMode_button;
+    .mode-toggler {
+      background-color: $drk_darkMode_button;
 
-                &:hover{
-                    background-color: $drk_darkMode_button_hover;
-                }
-            }
+      p {
+        color: $drk_darkMode_button_font;
+      }
 
-            .landing-cover{
-                background: $drk_landing_cover;
-            }
-
-            #nav{
-                background-color: $drk_nav_top;
-                #hamburger{
-                    color: $drk_ham_close;
-                }
-                #nav-close{
-                    color: $drk_ham_close;
-                }
-            }
-
-            .sidebar{
-                background-color: $drk_sidebar;
-            
-                li:hover{
-                    background-color: $drk_nav_hover;
-                }
-            }
-
-            section{
-                background-color: $drk_bg_section;
-                h1{color: white;}
-            
-                .main-container{
-            
-                    background-color: $drk_main_container;
-
-                    .about{
-                        h2{
-                            font-family: $font_rotis_head;
-                        }
-                    }
-            
-                    #achivements{
-                        @include sections_headings;
-            
-                        .timeline-wrapper{
-                            background-color: $drk_bg_section;
-                            box-shadow: $drk_section_shadows;
-
-                            #progress-bar{
-                                color: white;
-
-                                ul{
-                                    li{
-                                        &::after{
-                                            background-color: $drk_step_circle;
-                                        }
-                                        &:hover::after{
-                                            background-color: $drk_step_hover;
-                                        }
-                                    }
-                                    .tl-active::after{
-                                        background-color: $drk_step_active;
-                                    }
-                                }
-
-                                #line{
-                                    background-color: $drk_line;
-                                    #progress-line{
-                                        background: $drk_progress_line;
-                                    }
-                                }
-                                
-                            }
-
-                            #timeline-content-wrapper{
-                                
-                                .content-timeline{
-                                    background-color: $drk_content_timeline;
-                                    color: black
-                                }
-                            }
-                        }
-            
-                    }
-            
-                    #gallery{
-                        @include sections_headings;
-            
-                        .gallery-shadow{
-                            background-color: $drk_bg_section;
-                            box-shadow: $drk_section_shadows;
-                        }
-                    }
-            
-                    #team{
-                        @include sections_headings;
-                        height: 100vh;
-                        .tab-wrap{
-            
-                            .tabs{
-                                background-color: $drk_team_tabs;
-                                &:hover{
-                                    background-color: $drk_team_tabs_hover;
-                                    box-shadow: $drk_team_tab_hover_shadow;
-                                    color: white;
-                                }
-                            }
-                            .tab-active{
-                                background-color: $drk_team_tab_active;
-                                color: white;
-                            }
-                        }
-                        .content-container{
-                            background-color: $drk_bg_section;
-                            box-shadow: $drk_section_shadows;
-                        }
-                    }
-            
-                    #sponsors{
-                        @include sections_headings;
-            
-                        .sponsors-wrapper{
-                            background-color: $drk_bg_section;
-                            box-shadow: $drk_section_shadows;
-                        }
-                    }
-                }
-            }
-            .site-footer{
-                box-shadow: $drk_footer_shadow;
-                background-color: $drk_footer;
-
-                #footer-logo img{
-                    box-shadow: $drk_footer_logo_shadow;
-                }
-            
-                h6{
-                    
-                    color: white;
-                }
-                .designers{
-                    color: white;
-                }
-                .mailid{
-                    color:white;
-            
-                    &:hover{
-                        color: grey;
-                    }
-                }
-                a{
-                    color: $drk_footer_a;
-                }
-                .foothr
-                {
-                    border: 0px solid;
-                    box-shadow: $drk_footer_hr;
-                }
-            }
-        }
+      &:hover {
+        background-color: $drk_darkMode_button_hover;
+      }
     }
+
+    .landing-cover {
+      background: $drk_landing_cover;
+    }
+
+    #nav {
+      background-color: $drk_nav_top;
+
+      #hamburger {
+        color: $drk_ham_close;
+      }
+
+      #nav-close {
+        color: $drk_ham_close;
+      }
+    }
+
+    .sidebar {
+      background-color: $drk_sidebar;
+
+      li:hover {
+        background-color: $drk_nav_hover;
+      }
+    }
+
+    section {
+      background-color: $drk_bg_section;
+
+      h1 {
+        color: white;
+      }
+
+      .main-container {
+
+        background-color: $drk_main_container;
+
+        .about {
+          h2 {
+            font-family: $font_rotis_head;
+          }
+        }
+
+        #achivements {
+          @include sections_headings;
+
+          // .timeline-wrapper{
+          //     background-color: $drk_bg_section;
+          //     box-shadow: $drk_section_shadows;
+
+          //     #progress-bar{
+          //         color: white;
+
+          //         ul{
+          //             li{
+          //                 &::after{
+          //                     background-color: $drk_step_circle;
+          //                 }
+          //                 &:hover::after{
+          //                     background-color: $drk_step_hover;
+          //                 }
+          //             }
+          //             .tl-active::after{
+          //                 background-color: $drk_step_active;
+          //             }
+          //         }
+
+          //         #line{
+          //             background-color: $drk_line;
+          //             #progress-line{
+          //                 background: $drk_progress_line;
+          //             }
+          //         }
+
+          //     }
+
+          //     #timeline-content-wrapper{
+
+          //         .content-timeline{
+          //             background-color: $drk_content_timeline;
+          //             color: black
+          //         }
+          //     }
+          // }
+
+        }
+
+        #gallery {
+          @include sections_headings;
+
+          .gallery-shadow {
+            background-color: $drk_bg_section;
+            box-shadow: $drk_section_shadows;
+          }
+        }
+
+        #team {
+          @include sections_headings;
+          height: 100vh;
+
+          .tab-wrap {
+
+            .tabs {
+              background-color: $drk_team_tabs;
+
+              &:hover {
+                background-color: $drk_team_tabs_hover;
+                box-shadow: $drk_team_tab_hover_shadow;
+                color: white;
+              }
+            }
+
+            .tab-active {
+              background-color: $drk_team_tab_active;
+              color: white;
+            }
+          }
+
+          .content-container {
+            background-color: $drk_bg_section;
+            box-shadow: $drk_section_shadows;
+          }
+        }
+
+        #sponsors {
+          @include sections_headings;
+
+          .sponsors-wrapper {
+            background-color: $drk_bg_section;
+            box-shadow: $drk_section_shadows;
+          }
+        }
+      }
+    }
+
+    .site-footer {
+      box-shadow: $drk_footer_shadow;
+      background-color: $drk_footer;
+
+      #footer-logo img {
+        box-shadow: $drk_footer_logo_shadow;
+      }
+
+      h6 {
+
+        color: white;
+      }
+
+      .designers {
+        color: white;
+      }
+
+      .mailid {
+        color: white;
+
+        &:hover {
+          color: grey;
+        }
+      }
+
+      a {
+        color: $drk_footer_a;
+      }
+
+      .foothr {
+        border: 0px solid;
+        box-shadow: $drk_footer_hr;
+      }
+    }
+  }
+}

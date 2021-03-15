@@ -1,0 +1,32 @@
+
+================>>> ASME KIIT <<<===============
+
+GIT COMMANDS: -
+
+==> Branch Creation
+	> git checkout main	  	[ to get to the main branch ]
+ 	> git pull			[ get all the latest changes from the remote branch]
+	> git checkout -b branch_name	[ create a new branch ]
+
+==> To checkout to an existing branch 
+	> git checkout branch_name
+
+==> After making any changes in any files
+	- stage those changes manually (one by one, after reviewing it)
+	- Commit those changes with proper message
+		> git commit -m "message"   OR use VS code's UI to stage & commit changes
+	- Message format: "section_changed: changes done" 
+		[ example: "Gallery: photo size reduced" OR "Body: margin issues b/w sections"]
+	- Modify one section per commit.
+
+==> After commiting changes
+	> git checkout main		
+	> git pull			[ get the latest changes from the main ]
+	> git checkout branch_name	
+	> git rebase main		[ rebase your working branch to the latest local main branch ]
+	> git push origin branch_name	
+
+========================================================================================================
+
+- Always do git pull in your main branch, before creating a new branch
+- Always rebase you working branch before pushing it to remote.

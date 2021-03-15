@@ -1,0 +1,68 @@
+
+Install "Beautify" extension in vscode, and then copy the following code in settings.json file of vscode as it is
+
+TO open settings.json file ===> 
+	ctrl + shift + p >>  type "settings.json" >> select 'preferences: Open settings (JSON)'
+
+
+"files.trimTrailingWhitespace": false, // keep it false to avoid white space changes.
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "[blade]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true
+        "editor.autoIndent": "full",
+        "editor.tabSize": 2,
+        "editor.autoClosingBrackets": "always",
+    },
+    "[javascript]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.autoIndent": "full",
+        "editor.tabSize": 2
+    },
+    "[css]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "editor.autoIndent": "full",
+    },
+    "[php]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.formatOnSave": false,
+        "editor.autoIndent": "full",
+    },
+    "[scss]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "editor.autoIndent": "full",
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "sass.andStared": [
+        "active",
+        "focus",
+        "hover",
+        "nth-child"
+    ],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": "/css"
+        }
+    ],
+
+========================================================================================================
+
+
+
+

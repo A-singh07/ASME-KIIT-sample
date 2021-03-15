@@ -1,155 +1,347 @@
 // This file is meant to modify color themes and fonts.
 // All the variables are declared in "resources.scss".
 
-body{
-    font-family: $font1;
+body {
+  font-family: $font1;
 }
 
-.landing-slider{
+.mobile-only {
+  display: none;
+}
 
-    .text-one{
+@media screen and (max-width: $tablet) {
+  .mobile-only {
+    display: block;
+  }
+}
+
+.landing-slider {
+  .text-one {
+    font-family: $font_rotis_head;
+    // background: $bg_text-one;
+  }
+
+  @media screen and (max-width: $laptop) {
+    .text-one {
+      font-size: 3rem;
+    }
+  }
+}
+
+#nav {
+
+  #hamburger {
+    color: $ham_close;
+  }
+
+  #nav-close {
+    color: $ham_close;
+  }
+}
+
+
+
+.sidebar {
+
+  @media screen and (max-width: $tablet) {
+
+    // width: 100vw;
+    top: 0;
+    left: -80px;
+    bottom: 0;
+
+    ul {
+      margin-top: 60px;
+      height: 90%;
+      overflow-y: scroll;
+
+      li {
+        margin: 0 50px 0 20px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        a {
+
+          i {
+            width: 25% !important;
+          }
+
+          span {
+            text-align: right;
+            // display: inline;
+          }
+        }
+      }
+    }
+
+    #nav {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: $mobileL) and (max-width: $tablet) {
+    ul {
+      margin-top: 75px;
+
+      li {
+        margin: 0 70px 0 50px;
+
+        a {
+          i {
+            width: 20% !important;
+            font-size: 2rem;
+          }
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+section {
+  background-color: $bg_section;
+
+  .main-container {
+    .about {
+      h2 {
         font-family: $font_rotis_head;
-        // background: $bg_text-one;   
+      }
     }
-    @media screen and (max-width: $laptop) {
-        .text-one{
-            font-size: 3rem;
+
+    #achievements {
+      @include sections_headings;
+      padding-top: 0;
+
+      #achievements-wrapper {
+        background-color: $bg_section;
+        box-shadow: $section_shadows;
+      }
+
+      // .timeline-wrapper {
+      //   background-color: $bg_section;
+      //   box-shadow: $section_shadows;
+      // }
+
+    }
+
+    #gallery {
+      @include sections_headings;
+
+      .gallery-shadow {
+        background-color: $bg_section;
+        box-shadow: $section_shadows;
+      }
+
+      @media screen and (max-width: $mobileL) {
+        .gallery-shadow {
+          width: 100%;
         }
 
-    }
-}
+        .swiper-container {
+          width: 95%;
+          height: 98%;
+          padding-top: 10px;
 
-#nav{
-    background-color: $nav_top;
+          .swiper-slide {
+            width: 100%;
+            height: 100%;
 
-    #hamburger{
-        color: $ham_close;
-    }
-    #nav-close{
-        color: $ham_close;
-    }
-    @media screen and (max-width: $laptop){
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 70px;
-        border-bottom-right-radius: 2rem;
-    }
-    @media screen and (max-width: $tablet){
-        width: 100%;
-        height: 70px;
-        border-radius: 0;
-
-        i{
-            padding: 18px;
-        }
-    }
-}
-
-.sidebar{
-    background-color: $sidebar;
-
-    li:hover{
-        background-color: $nav_hover;
-    }
-
-    @media screen and (max-width: $laptop) {
-        left: -100px;
-
-        ul{
-            margin-top: 60px;
-        }
-    }
-}
-
-section{
-    background-color: $bg_section;
-
-    .main-container{
-
-        .about{
-            h2{
-                font-family: $font_rotis_head;
+            img {
+              border-radius: 2em;
             }
+          }
+        }
+      }
+    }
+
+    #team {
+      @include sections_headings;
+      height: 100vh;
+
+      .content-container {
+        background-color: $bg_section;
+        box-shadow: $section_shadows;
+      }
+
+      @media screen and (min-width: $mobileS) and (max-width: $mobileM) {
+        .team-row {
+          padding-top: 20px;
+
+          .team-row3 {
+            margin-right: 10em;
+          }
+        }
+      }
+
+      @media screen and (min-width: $mobileM) and (max-width: 400px) {
+        .team-row {
+          padding-top: 20px;
+
+          .team-row3 {
+            margin-right: 8em;
+          }
+        }
+      }
+
+      @media screen and (min-width: 400px) and (max-width: $mobileL) {
+        .team-row {
+          padding: 20px;
+
+          .team-row3 {
+            margin-right: 4em;
+          }
+        }
+      }
+
+      @media screen and (max-width: $mobileL) {
+        height: 80vh;
+
+        .tab-wrap {
+          height: 40px;
+
+          button {
+            font-size: 0.8em;
+            border-radius: 1em;
+            padding: 10px 15px;
+          }
         }
 
-        #achivements{
-            @include sections_headings;
+        .content-container {
+          width: 100%;
+          padding: 15px;
 
-            .timeline-wrapper{
-                background-color: $bg_section;
-                box-shadow: $section_shadows;
-            }
+          .t-content {
+            overflow-x: auto;
+            overflow-y: hidden;
+            height: 100%;
 
-        }
+            .team-row {
+              padding: 10px 0;
+              height: 100%;
+              flex-wrap: nowrap;
 
-        #gallery{
-            @include sections_headings;
+              .team-row3 {
+                width: 100%;
+                height: 100%;
 
-            .gallery-shadow{
-                background-color: $bg_section;
-                box-shadow: $section_shadows;
-            }
-        }
+                .team-heads {
+                  width: 100%;
 
-        #team{
-            @include sections_headings;
-            height: 100vh;
-            .tab-wrap{
+                  span {
+                    padding: 10px 5px;
+                    grid-template-rows: 1fr 0.8fr;
 
-                .tabs{
-                    background-color: $team_tabs;
-                    &:hover{
-                        background-color: $team_tabs_hover;
-                        box-shadow: $team_tab_hover_shadow;
+                    div {
+                      width: 13em;
+                      height: 14em;
                     }
-                }
-                .tab-active{
-                    background-color: $team_tab_active;
-                }
-            }
-            .content-container{
-                background-color: $bg_section;
-                box-shadow: $section_shadows;
-            }
-        }
 
-        #sponsors{
-            @include sections_headings;
+                    h5 {
+                      padding: 15px 5px;
+                      font-size: 1em;
+                    }
+                  }
+                }
+              }
 
-            .sponsors-wrapper{
-                background-color: $bg_section;
-                box-shadow: $section_shadows;
+              span {
+                padding: 10px 5px;
+                grid-template-rows: 1fr 0.8fr;
+
+                div {
+                  width: 13em;
+                  height: 14em;
+                }
+
+                h5 {
+                  padding: 15px 5px;
+                  font-size: 1em;
+                }
+              }
             }
+          }
+
+          // .t-content-active{
+          //     display: flex;
+          // }
         }
+      }
     }
+
+    #sponsors {
+      @include sections_headings;
+
+      .sponsors-wrapper {
+        background-color: $bg_section;
+        box-shadow: $section_shadows;
+      }
+
+      @media screen and (max-width: $mobileL) {
+        height: 75vh;
+
+        .sponsors-wrapper {
+          width: 100%;
+
+          .sponsors-container {
+            padding: 30px 10px;
+
+            .flex-container {
+              width: 100%;
+              padding: 5px;
+              justify-content: center;
+              align-items: center;
+
+              .brand_image {
+                width: 5.8em;
+                height: 5.8em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
+.site-footer {
 
-.site-footer{
-    background-color: $footer;
-    h6{
-        
-        color: black;
+  .designers {
+    color: black;
+  }
+
+  .mailid {
+
+    &:hover {
+      color: grey;
     }
-    .designers{
-        color: black;
+  }
+
+  a {}
+
+  @media screen and (max-width: $tablet) {
+    padding-left: 0;
+  }
+
+  @media screen and (max-width: $mobileL) {
+    #footer-logo {
+      margin: auto;
+      width: 100%;
+      text-align: center;
+
+      img {
+        width: 110px;
+      }
     }
-    .mailid{
-        color:black;
 
-        &:hover{
-            color: grey;
-        }
+    #reach-footer {
+      text-align: center;
+
+      a {
+        font-size: 1em;
+      }
     }
-
-    a{
-        color: $footer_a;
-    }
-
-    @media screen and (max-width: $tablet){
-        padding-left: 0;
-    }
-
-
+  }
 }

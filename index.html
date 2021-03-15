@@ -15,15 +15,19 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-
     <!-- my Font Awesome -->
     <script src="https://kit.fontawesome.com/eb59bb629c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="css/mdb.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <!-- Bootstrap 5.0 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <!--Swiper.css-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -44,14 +48,13 @@
 
     <!-- mobile Info -->
 
-    <div class="mobile-info">
+    <!-- <div class="mobile-info">
         <h2>The mobile/tablet version of this site is under development.</h2>
         <h2>We'll be available soon. <br><br> Till then enjoy the desktop version <br> <br><br> Cheers!!</h2>
-    </div>
+    </div> -->
 
 
     <!-- Loader using Gsap-->
-
     <div class="intro">
         <div class="intro-text">
             <h2 class="hide">
@@ -69,13 +72,18 @@
 
     <!-- XX---Loader---XX -->
 
+
     <!-- ------ Mother-Container ------ -->
 
     <div id="mother-container">
 
-        <div class="mode-toggler">
-            <p id="toggle-p" >Go Dark</p>
+        <div class="blogpost_btn">
+            <p id="bp_btn">Blogs</p>
         </div>
+
+        <!-- <div class="mode-toggler">
+            <p id="toggle-p">Go Dark</p>
+        </div> -->
 
         <div id="logo">
             <img src="./Assets/ASME-logo.jpeg" alt="ASME-KIIT logo">
@@ -87,51 +95,144 @@
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block" src="./Assets/c-image1.jpeg" alt="First slide">
+                    <img class="d-block" src="./Assets/landing_image/Group photo@1x.png" alt="First slide">
                 </div>
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                     <img class="d-block" src="./Assets/c-image2.jpeg" alt="Second slide">
-                </div>
+                </div> -->
                 <!-- <div class="carousel-item">
                     <img class="d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg"
                         alt="Third slide">
                 </div> -->
             </div>
             <div class="text-one">
-                <p>
-                    ASME <br>
-                    KIIT
-                </p>
+                <p id="asme-head">ASME - KIIT</p>
+                <p id="asme-ff">American School of Mechanical Engineering</p>
             </div>
         </div>
-
-
         <!-- XX---Landing Page---XX -->
 
-        <!-- Side Nav -->
-        <div id="nav">
-            <i id="hamburger" class="fas fa-bars"></i>
-            <i id="nav-close" class="fa fa-times"></i>
+        <!-- Mobile Top-Nav-->
+        <div class="nav-mobile-top">
+            <p>ASME-KIIT</p>
         </div>
+        <div id="nav-mobile">
+            <i id="hamburger-mob" class="fas fa-bars"></i>
+            <i id="nav-close-mob" class="fa fa-times"></i>
+        </div>
+        <!-- Destop SideNav -->
         <div class="sidebar" id="sidebar">
+            <div id="nav">
+                <i id="hamburger" class="fas fa-bars"></i>
+                <i id="nav-close" class="fa fa-times"></i>
+            </div>
+
             <ul>
-                <li><a class="nav-link" href="#home"><i class="fa fa-home"></i><span class="nav-text">Home</span></a>
+                <li class="nav-li nav-li-active">
+                    <a class="nav-link tab-active" href="#home">
+                        <!-- <i class="fa fa-home"></i> -->
+                        <i class='bx bx-home-alt'></i>
+                        <span class="nav-text">Home</span>
+                    </a>
+                    <p></p>
                 </li>
-                <li><a class="nav-link" href="#about"><i class="fa fa-info-circle"></i><span
-                            class="nav-text">About</span></a></li>
-                <li><a class="nav-link" href="#achivements"><i class="fa fa-trophy"></i><span
-                            class="nav-text">Achivements</span></a>
+                <li class="nav-li">
+                    <a class="nav-link" href="#about">
+                        <!-- <i class="fa fa-info-circle"></i> -->
+                        <i class="bi bi-info-circle"></i>
+                        <span class="nav-text">About</span>
+                    </a>
+                    <p></p>
                 </li>
-                <li><a class="nav-link" href="#gallery"><i class="fa fa-camera"></i><span
-                            class="nav-text">Gallery</span></a>
+                <li class="nav-li">
+                    <a class="nav-link" href="#achievements">
+                        <!-- <i class="fa fa-trophy"></i> -->
+                        <!-- <i class='bx bx-trophy'></i> -->
+                        <i class="bi bi-trophy"></i>
+                        <span class="nav-text">Achivements</span>
+                    </a>
+                    <p></p>
                 </li>
-                <li><a class="nav-link" href="#team"><i class="fa fa-users"></i><span class="nav-text">Team</span></a>
+                <li class="nav-li">
+                    <a class="nav-link" href="#gallery">
+                        <!-- <i class="fa fa-camera"></i> -->
+                        <!-- <i class='bx bx-photo-album'></i> -->
+                        <!-- <i class="bi bi-images"></i> -->
+                        <i class="bi bi-camera"></i>
+                        <span class="nav-text">Gallery</span>
+                    </a>
+                    <p></p>
                 </li>
-                <li><a class="nav-link" href="#sponsors"><i class="fa fa-handshake"></i><span
-                            class="nav-text">Sponsors</span></a></li>
-                <li><a class="nav-link" href="#contact"><i class="fa fa-id-card"></i><span
-                            class="nav-text">Contact</span></a></li>
+                <li class="nav-li">
+                    <a class="nav-link" href="#team">
+                        <!-- <i class="fa fa-users"></i> -->
+                        <!-- <i class='bx bx-group'></i> -->
+                        <i class="bi bi-people"></i>
+                        <span class="nav-text">Team</span>
+                    </a>
+                    <p></p>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="#sponsors">
+                        <!-- <i class="fa fa-handshake"></i> -->
+                        <i class="far fa-handshake"></i>
+                        <span class="nav-text">Sponsors</span>
+                    </a>
+                    <p></p>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="#contact">
+                        <!-- <i class="fa fa-id-card"></i> -->
+                        <!-- <i class="far fa-address-card"></i> -->
+                        <i class="bi bi-chat-left-text"></i>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                    <p></p>
+                </li>
+                <li class="nav-li" data-bs-toggle="modal" data-bs-target="#joinModal">
+                    <a class="nav-link">
+                        <!-- <i class='bx bx-add-to-queue'></i> -->
+                        <i class="bi bi-person-plus"></i>
+                        <span class="nav-text">Join Us</span>
+                    </a>
+                    <p></p>
+                </li>
             </ul>
+        </div>
+
+        <!-- Join Modal -->
+        <div class="modal fade " id="joinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="col-12 modal-title text-center" id="exampleModalLabel">JOIN US</h3>
+                    </div>
+                    <div class="col-12 modal-body text-center">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed dolores vero tempora, perferendis
+                        hic voluptate impedit doloremque maiores quidem! Natus esse, sapiente voluptate quasi fuga odit
+                        sequi adipisci assumenda dignissimos temporibus possimus corporis, ratione magni voluptatum
+                        veniam laborum dolores mollitia et aperiam voluptates, veritatis reprehenderit suscipit soluta?
+                        Perferendis, dolore eveniet doloribus distinctio explicabo ipsam similique consequuntur vitae
+                        perspiciatis, excepturi animi est quidem aliquid! Dolores, ullam quam suscipit mollitia
+                        doloremque tenetur tempore, officiis repudiandae doloribus porro minus assumenda, vel commodi
+                        aperiam natus voluptas iusto sed debitis aspernatur cumque quisquam autem libero? Exercitationem
+                        fugiat, hic quos pariatur tenetur cum ratione deleniti tempora neque, eveniet officia officiis
+                        nulla magnam praesentium maxime sint dolorum voluptatibus, temporibus repudiandae! Nesciunt,
+                        assumenda inventore repellat beatae, accusantium architecto eos sequi voluptatibus, dolores odio
+                        velit eligendi atque quos libero quibusdam ut obcaecati maxime mollitia omnis voluptas eius!
+                        Accusantium, maiores ipsum dolor, adipisci nihil voluptas sequi rem quaerat corporis
+                        perspiciatis saepe eveniet, quos ab ad unde possimus atque. Ab quo itaque, aliquam blanditiis
+                        eos error nemo ipsam voluptate id eum dicta. Eius dolorem nam ipsa asperiores amet harum atque
+                        quos magni eum perspiciatis cum exercitationem iste consectetur nostrum, temporibus quaerat
+                        dolore ratione quis sit iusto saepe? Cupiditate accusamus maiores corrupti. <br><br><br>
+                        <a href="https://docs.google.com/forms/d/1ekeYTtdjgotqSoClN3Rr9c2cfrAhgJ2yzIVEVRy07JU/edit">
+                            click here</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- XX---Side Nav---XX -->
@@ -142,7 +243,7 @@
             <div class="main-container">
                 <!-- About -->
                 <div class="about" id="about">
-                    <h2 data-aos="fade-right" data-aos-duration="1500">About</h2>
+                    <h2 data-aos="fade-right" data-aos-duration="1500">Who we are</h2>
                     <p data-aos="fade-left" data-aos-duration="1500">Lorem ipsum dolor, sit amet consectetur adipisicing
                         elit. Voluptas
                         blanditiis accusamus fugit?
@@ -158,11 +259,153 @@
                 </div>
                 <hr>
                 <br>
-                <br>
                 <!-- XX---About---XX -->
 
                 <!-- Timeline -->
-                <div class="timeline" id="achivements">
+                <div id="achievements">
+                    <h1>Achivements</h1>
+                    <br>
+                    <div id="achievements-wrapper" class="container">
+
+                        <div class="timeline-container">
+
+                            <div class="main-timeline">
+
+                                <!-- Start Year section -->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                <span class="year">2021</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5 class="title">-- coming soon --</h5>
+                                    </div>
+                                </div>
+                                <!-- End Year section -->
+
+                                <!-- Start Year section -->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                <span class="year">2020</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5 class="title">6th in Drag <br> 6th Overall</h5>
+                                    </div>
+                                </div>
+                                <!-- End Year section -->
+
+                                <!-- Start Year section -->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                <span class="year">2019</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5 class="title">1st in Endurance <br> 3rd Overall</h5>
+                                    </div>
+                                </div>
+                                <!-- End Year section -->
+
+                                <!-- Start Year section -->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                <span class="year">2018</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5 class="title">19th Overall</h5>
+                                    </div>
+                                </div>
+                                <!-- End Year section -->
+
+                                <!-- Start Year section -->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                <span class="year">2017</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5 class="title">2nd in Endurance</h5>
+                                    </div>
+                                </div>
+                                <!-- End Year section -->
+
+                                <!-- Start Year section -->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                <span class="year">2016</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5 class="title">2nd Overall</h5>
+                                    </div>
+                                </div>
+                                <!-- End Year section -->
+
+                                <!-- Start Year section -->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                <span class="year">2015</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5 class="title">17th Overall</h5>
+                                    </div>
+                                </div>
+                                <!-- End Year section -->
+
+                                <!-- Start Year section -->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                <span class="year">2014</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5 class="title">3rd in Design <br> 2nd in Drag</h5>
+                                    </div>
+                                </div>
+                                <!-- End Year section -->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div class="timeline" id="achivements">
                     <h1>Achivements</h1>
                     <br>
                     <div class="timeline-wrapper">
@@ -223,9 +466,9 @@
 
                     </div>
 
-                </div>
+                </div> -->
+
                 <hr>
-                <br>
                 <!-- XX---Timeline---XX -->
 
                 <!-- Gallery -->
@@ -237,323 +480,342 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="./Assets/Gallery/g-image1.jpeg" alt=""></div>
                                 <div class="swiper-slide"><img src="./Assets/Gallery/g-image2.jpeg" alt=""></div>
-                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image3.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image6.png" alt=""></div>
                                 <div class="swiper-slide"><img src="./Assets/Gallery/g-image4.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image5.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image3.jpeg" alt=""></div>
                                 <div class="swiper-slide"><img src="./Assets/Gallery/g-image1.jpeg" alt=""></div>
                                 <div class="swiper-slide"><img src="./Assets/Gallery/g-image2.jpeg" alt=""></div>
                                 <div class="swiper-slide"><img src="./Assets/Gallery/g-image3.jpeg" alt=""></div>
-                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image4.jpeg" alt=""></div>
-                                <div class="swiper-slide"><img src="./Assets/Gallery/g-image2.jpeg" alt=""></div>
                             </div>
                         </div>
                     </div>
 
                 </div>
                 <!-- XX---Gallery---XX -->
-                <hr>
-                <br>
+                <hr id="gallery_bottom_hr">
 
                 <!-- ----- Our Team ----- -->
 
                 <div class="team" id="team">
                     <h1>Our Team</h1>
+
                     <div class="tab-wrap">
                         <button class="tabs tab-active" id="t-1" onclick="activeCont('tc-1')">All</button>
-                        <button class="tabs" id="t-2" onclick="activeCont('tc-2')">Manufacturing</button>
-                        <button class="tabs" id="t-3" onclick="activeCont('tc-3')">Marketting</button>
-                        <button class="tabs" id="t-4" onclick="activeCont('tc-4')">Design and Design Report</button>
+                        <button class="tabs" id="t-2" onclick="activeCont('tc-2')">Marketing</button>
+                        <button class="tabs" id="t-3" onclick="activeCont('tc-3')">Design</button>
+                        <button class="tabs" id="t-4" onclick="activeCont('tc-4')"> Design Report</button>
                         <button class="tabs" id="t-5" onclick="activeCont('tc-5')">Riding</button>
                     </div>
 
                     <div class="content-container">
-                        <div class="t-content t-content-active" id="tc-1">
-
-                            <div class="team-row2">
-                                <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
-                                    <h5>(Captain)</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
-                                    <h5>(Vice-Captain)</h5>
-                                </span>
-                            </div>
-                            <div class="team-row">
-                                <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                            </div>
-                            <div class="team-row">
-                                <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                            </div>
-                            <div class="team-row">
-                                <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                            </div>
-                            <div class="team-row">
-                                <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                            </div>
-                            <div class="team-row">
-                                <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                            </div>
-                            <div class="team-row">
-                                <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
+                        <!-- mobile -->
+                        <div class="team-row3 mobile-only">
+                            <div class="team-heads">
+                                <div id="team-heads-img1" class="team-heads-img"><img
+                                        src="./Assets/Team/CAPTAIN_GAURAV KUMAR.jpeg" alt="">
+                                    <h5>Gaurav Singh <br>(Captain)</h5>
+                                </div>
+                                <div id="team-heads-img2" class="team-heads-img"><img
+                                        src="./Assets/Team/VICE CAPTAIN_PRIYARANJAN.jpeg" alt="">
+                                    <h5>Priyaranjan <br>(Vice-Captain)</h5>
+                                </div>
                             </div>
                         </div>
+                        <div class="more-team-images_btn">
+                            <a href="./team.html" target="_blank">
+                                <p>More</p>
+                            </a>
+                        </div>
+                        <!-- Desktop -->
+                        <!-- -- ALL -- -->
+                        <div class="t-content t-content-active" id="tc-1">
+                            <div class="team-row3">
+                                <div class="team-heads">
+                                    <span>
+                                        <div><img src="./Assets/Team/CAPTAIN_GAURAV KUMAR.jpeg" alt=""></div>
+                                        <h5>Gaurav Singh <br>(Captain)</h5>
+                                    </span>
+                                    <span>
+                                        <div><img src="./Assets/Team/VICE CAPTAIN_PRIYARANJAN.jpeg" alt=""></div>
+                                        <h5>Priyaranjan <br>(Vice-Captain)</h5>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="Assets/Team/DESIGN HEAD_BIKI KUMAR SHAH.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/DESIGN REPORT HEAD_SOHINI RUDRA.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MARKETING HEAD_DEBASHREE DUTTA.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/RIDING CAPTAIN_SUDHANSHU KUMAR.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_SIDDHANT.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_SOUMIK CHAKRABARTY.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MANAGER_SUYASH VISHWAKARMA.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/DESIGN LEAD_DEBANKAN CHAKRABORTY.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="/Assets/Team/DESIGN REPORT LEAD_NEETHI BARUAH.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MARKETING LEAD_ANKIT CHAUDHARY.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/VICE CAPTAIN_PRIYARANJAN.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_MD. ADNAAN KHAN.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_AYUSH DWIVEDI.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_NETRA DAMLE.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_TRINANJANA BAGCHI.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_AMAN SINGH.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_ANANT SHRI KAUSHIK.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_ISHAN SHRIVASTAVA.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_PIYUSH RAJ.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_PRIYANSHU KAKKAD.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_SATTWIK SINGH.jpg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_SOUMYADEEP MANDAL.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_UTKARSH KEERTI.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_VAISHNAVI JAISWAL.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+
+                        </div>
+                        <!-- --XX-- ALL --XX-- -->
 
                         <div class="t-content" id="tc-2">
                             <div class="team-row">
                                 <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/MARKETING HEAD_DEBASHREE DUTTA.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/MARKETING LEAD_ANKIT CHAUDHARY.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                             </div>
                             <div class="team-row">
                                 <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/CAPTAIN_GAURAV KUMAR.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/MEMBER_MD. ADNAAN KHAN.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/MEMBER_NETRA DAMLE.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/VICE CAPTAIN_PRIYARANJAN.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MANAGER_SUYASH VISHWAKARMA.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                             </div>
                             <div class="team-row">
                                 <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/MEMBER_AMAN SINGH.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/MEMBER_PIYUSH RAJ.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/MEMBER_PRIYANSHU KAKKAD.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/MEMBER_SOUMYADEEP MANDAL.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_UTKARSH KEERTI.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                             </div>
+                            <div class="team-row">
+                                <span>
+                                    <div><img src="./Assets/Team/MEMBER_VAISHNAVI JAISWAL.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                            </div>
+
                         </div>
 
                         <div class="t-content" id="tc-3">
                             <div class="team-row">
                                 <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/DESIGN HEAD_BIKI KUMAR SHAH.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/DESIGN LEAD_DEBANKAN CHAKRABORTY.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                             </div>
                             <div class="team-row">
                                 <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/MEMBER_SIDDHANT.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/MEMBER_SOUMIK CHAKRABARTY.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MARKETING LEAD_ANKIT CHAUDHARY.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MEMBER_ANANT SHRI KAUSHIK.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                             </div>
                             <div class="team-row">
                                 <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MEMBER_ISHAN SHRIVASTAVA.jpg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MEMBER_PIYUSH RAJ.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MEMBER_SATTWIK SINGH.jpg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                             </div>
                         </div>
 
+
                         <div class="t-content" id="tc-4">
                             <div class="team-row">
                                 <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/DESIGN REPORT HEAD_SOHINI RUDRA.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/DESIGN REPORT LEAD_NEETHI BARUAH.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                             </div>
                             <div class="team-row">
                                 <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/MARKETING HEAD_DEBASHREE DUTTA.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <div><img src="./Assets/Team/CAPTAIN_GAURAV KUMAR.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MARKETING LEAD_ANKIT CHAUDHARY.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/VICE CAPTAIN_PRIYARANJAN.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/Team/MEMBER_TRINANJANA BAGCHI.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                             </div>
                             <div class="team-row">
                                 <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MEMBER_AMAN SINGH.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MEMBER_PRIYANSHU KAKKAD.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MEMBER_SOUMYADEEP MANDAL.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MEMBER_UTKARSH KEERTI.jpeg" alt=""></div>
+                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                </span>
+                                <span>
+                                    <div><img src="Assets/Team/MEMBER_VAISHNAVI JAISWAL.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                             </div>
@@ -562,64 +824,52 @@
                         <div class="t-content" id="tc-5">
                             <div class="team-row">
                                 <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/RIDING CAPTAIN_SUDHANSHU KUMAR.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/VICE CAPTAIN_PRIYARANJAN.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                             </div>
                             <div class="team-row">
                                 <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/CAPTAIN_GAURAV KUMAR.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MEMBER_SOUMIK CHAKRABARTY.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MEMBER_MD. ADNAAN KHAN.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/DESIGN REPORT LEAD_NEETHI BARUAH.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                             </div>
                             <div class="team-row">
                                 <span>
-                                    <div><img src="Assets/ocean.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MEMBER_NETRA DAMLE.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean2.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MEMBER_TRINANJANA BAGCHI.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                                 <span>
-                                    <div><img src="Assets/ocean3.jpg" alt=""></div>
-                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                </span>
-                                <span>
-                                    <div><img src="Assets/ocean4.jpg" alt=""></div>
+                                    <div><img src="Assets/Team/MEMBER_PIYUSH RAJ.jpeg" alt=""></div>
                                     <h5>Lorem ipsum dolor sit amet.</h5>
                                 </span>
                             </div>
                         </div>
-                        <!-- XX --- content container ---XX  -->
                     </div>
+                    <!-- XX --- content container ---XX  -->
                 </div>
-                <hr>
                 <br>
+                <hr id="team_bottom_hr">
                 <!-- XX----- Our Team -----XX -->
 
                 <!-- Sponsors&Partners -->
@@ -655,31 +905,26 @@
         <!-- ------XX------ Main section of the Page ------XX------ -->
 
         <!-- Footers -->
-
         <footer class="site-footer" id="contact">
             <div class="container">
                 <div class="row">
-                    <div id="footer-logo" class="col-xs-12 col-md-4">
+                    <div id="footer-logo" class="col-12 col-md-4">
 
                         <img src="./Assets/ASME-logo.jpeg" alt="Asme Kiit Logo">
 
                     </div>
-
-                    <div class="col-xs-12 col-md-4">
+                    <div id="reach-footer" class="col-12 col-md-4">
                         <h6>REACH OUT TO US</h6>
-                        <ul>
-                            <a target="_blank" href="https://instagram.com/asme_kiit"> <i
-                                    class="fab fa-instagram  fa-3x " style=" margin:15px; font-size:2'.3'em"></i></a>
-
-
-                            <a target="_blank" href="https://in.linkedin.com/company/kiit-asme"> <i
-                                    class="fab fa-linkedin fa-3x " style=" margin:15px; font-size:2.3m"></i></a>
-                            <li style="margin:5px">
-                                <h5 class="mailid"><i class="fas fa-envelope "></i>-teamketav2020@gmail.com</h5>
-                        </ul>
+                        <a target="_blank" href="https://instagram.com/asme_kiit">
+                            <i class="fab fa-instagram fa-3x"></i>
+                        </a>
+                        <a target="_blank" href="https://in.linkedin.com/company/kiit-asme">
+                            <i class="fab fa-linkedin fa-3x"></i>
+                        </a>
+                        <h5 class="mailid"><i class="fas fa-envelope "></i> &nbsp; teamketav2020@gmail.com</h5>
                     </div>
 
-                    <div class="col-xs-12 col-md-4" id="designer-footer">
+                    <div id="designer-footer" class="col-12 col-md-4">
                         <h6>Website Designed By</h6>
                         <ul class="designers">
 
@@ -697,7 +942,7 @@
                                     <i class="fab fa-linkedin  " style=" margin:5px"></i></a>
                             </li>
                             <li>Utkarsh Keerti
-                                <a target="_blank" href="https://instagram.com/utkarsh_keerti"> <i
+                                <a target="_blank" href="http://linkedin.com/in/utkarsh-keerti-2900b7163"> <i
                                         class="fab fa-instagram  " style=" margin:5px"></i></a><a target="_blank"
                                     href="https://in.linkedin.com/company/kiit-asme"> <i class="fab fa-linkedin  "
                                         style=" margin:5px"></i></a>
@@ -710,40 +955,36 @@
 
             <div class="container" id="copyright">
                 <div class="row">
-                    <div class="col-md-12 col-sm-6 col-xs-12">
+                    <div class="col-md-12 col-sm-6 col-12">
                         <div class="text-center p-3">
                             © 2020 Copyright:
                             <a>ASME KIIT </a>
                         </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12"></div>
                     </div>
                 </div>
+            </div>
         </footer>
-
 
         <!-- XX---Footer---XX -->
 
     </div>
     <!-- ---XX--- Mother-Container ---XX--- -->
 
+
+
+
     <!-- jQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Bootstrapv5 Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 
     <!--Swiper.js-->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"
         integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA=="
         crossorigin="anonymous"></script> -->
-
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -752,11 +993,23 @@
         integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
         crossorigin="anonymous"></script>
 
+    <!-- GSAP Scroll Trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
     <!-- AOS js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <!-- DarkMode -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script> -->
 
     <!-- Custom JS File -->
     <script src="js/main.js"></script>

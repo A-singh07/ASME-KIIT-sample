@@ -1,45 +1,69 @@
 /* ---------- Color Themes ----------- */
 
-/* --- BLUE THEME --- */
+// ------------------------------------------
+$primary_color: hsl(204, 55%, 60%); //PC
+$pc_shade1: hsl(206, 100%, 92%);
+$pc_shade2: hsl(207, 75%, 85%);
+$pc_shade3: hsl(204, 57%, 80%);
+$pc_shade4: hsl(204, 40%, 40%);
+$pc_shadow: hsl(204, 30%, 82%);
+$pc_shadow2: hsl(204, 40%, 72%);
+$pc_grey: hsl(204, 30%, 80%); //PC
+$pc_bg_color: #f1f9fe;
+$pc_bg_color1: hsl(203, 87%, 99%);
 
-$bg_section: #f8eee4;  // light-creme2
-$bg_section: #f7fbfc;
-$main_container: #f7fbfc;
+$pc_text: #163950;
+// -----------------------------------------
+
+$bg_section: $pc_bg_color1;
+// $main_container: #f7fbfc;
 
 $intro: #1b262c;
 $intro_slider: #b9d7ea;
 
-$scroll_thumb: #8cc4e9;
+$scroll_thumb: $primary_color;
 $scroll_thumb_hover: #75b3dd;
 
 $landing_cover: rgba(178, 217, 230, 0.5); //skyBlue with alpha 0.5
-$bg_text-one: rgba(178, 217, 230, 0.95);  //skyBLue with alpha 0.95
+$bg_text-one: rgba(178, 217, 230, 0.95); //skyBLue with alpha 0.95
 
-$h1_bg: #b9d7ea;
+$mode_toggler: #163950;
+$blog_btn: #163950;
 
-$section_shadows: -2px -2px 20px 2px #58a5b84d inset;
+$h1_bg: #afd2e9;
+$abt_bg: #ebf4fa;
+$abt_h2_bg: $h1_bg; // for responsive
 
-$nav_top:#5093c0;
+$section_shadows: -2px -2px 20px 2px #afd2e9cc inset;
+
+$nav_top: $primary_color;
 $ham_close: white;
-$sidebar: #c9e4f5;
-$nav_hover: #b6d8f0;
+$sidebar: $pc_bg_color;
+$nav_active: $pc_shade1;
+$nav_hover: $nav_active;
+$nav_active_border: $primary_color;
 
-$progress_line: linear-gradient(to right, #367dad 0%, #7fdbd7 100%);
-$step_active: #2d719e;
-$step_hover: $step_active;
-$content_timeline: #d9ecf2;
+$achv_circle1: $pc_shade4;
+$achv_circle2: $pc_shadow2;
+$achv_content: $pc_shade1;
 
-$team_tabs: #ddf3fa;
-$team_tabs_hover: #b6d8f0;
-$team_tab_hover_shadow: 0px 4px 10px rgba(177, 211, 252, 0.76);
-$team_tab_active:#5ca9dd;
+// $progress_line: linear-gradient(to right, #367dad 0%, #7fdbd7 100%);
+// $step_active: #2d719e;
+// $step_hover: $step_active;
+// $content_timeline: #d9ecf2;
 
-$footer: #c9e4f5;
+$team_tabs: $pc_shade1;
+$team_tabs_hover: $pc_shade1;
+// $team_tabs_hover: #b6d8f0;
+$team_tab_hover_shadow: 0px 4px 10px 0px $pc_shadow;
+$team_tab_active: $primary_color;
+
+$footer: $h1_bg;
 $footer_a: black;
 
 // color for social media Icons
 $facebook_color:#4267B2;
-$instagram_color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+$instagram_color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 $twitter_color:#00acee;
 $linkedin_color: #1b7aa7;
 
@@ -65,8 +89,10 @@ $drk_hr: 10px dotted #4f3e64;
 
 $drk_section_shadows: -2px -2px 20px 2px #6f2a94 inset;
 
-$drk_darkMode_button: #272727;
-$drk_darkMode_button_hover: #3d3d3d;
+$drk_darkMode_button: #ffebcd;
+$drk_darkMode_button_font: #272727;
+$drk_darkMode_button_hover: #f8ce8f;
+// $drk_darkMode_button_hover: #3d3d3d;
 
 $drk_nav_top:#68089c;
 $drk_ham_close: white;
@@ -74,12 +100,12 @@ $drk_ham_close: white;
 $drk_sidebar: #c79efa;
 $drk_nav_hover: #b880fc;
 
-$drk_line: #dcc0fd;
-$drk_progress_line: linear-gradient(to right, #730cb8 0%, #cf4fd8 100%);
-$drk_step_active: #730cb8;
-$drk_step_circle: #dcc0fd;
-$drk_step_hover: $step_active;
-$drk_content_timeline: #c79efa;
+// $drk_line: #dcc0fd;
+// $drk_progress_line: linear-gradient(to right, #730cb8 0%, #cf4fd8 100%);
+// $drk_step_active: #730cb8;
+// $drk_step_circle: #dcc0fd;
+// $drk_step_hover: $step_active;
+// $drk_content_timeline: #c79efa;
 
 $drk_team_tabs: $drk_sidebar;
 $drk_team_tabs_hover: $drk_nav_top;
@@ -99,35 +125,39 @@ $drk_footer_hr: 0 10px 10px -8px #7d479b inset;
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
 
-$font_landing: 'Red Hat Display', sans-serif;
+$font_landing: 'Red Hat Display',
+sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,700&display=swap');
 
-$font_landing2: 'Playfair Display', serif;
+$font_landing2: 'Playfair Display',
+serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
-$font1: 'Quicksand', sans-serif;
+$font1: 'Quicksand',
+sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap');
 
-$font2: 'Merriweather', serif;
+$font2: 'Merriweather',
+serif;
 
 
 // Rotis Semi Serif
 
-@font-face{
-    font-family: rotis_semi_serif;
-    src: url(../Assets/FONTS/RotisSemiSerifStd.otf);
+@font-face {
+  font-family: rotis_semi_serif;
+  src: url(../Assets/FONTS/RotisSemiSerifStd.otf);
 }
 
 $font_rotis_head: rotis_semi_serif;
 
 // Rotis Serif
 
-@font-face{
-    font-family: rotis_serif;
-    src: url(../Assets/FONTS/RotisSerif.otf);
+@font-face {
+  font-family: rotis_serif;
+  src: url(../Assets/FONTS/RotisSerif.otf);
 }
 
 $font_rotis: rotis_serif;
@@ -138,8 +168,8 @@ $font_rotis: rotis_serif;
 // Breakpoints
 $mobileS: 320px;
 $mobileM: 375px;
-$mobileL: 425px;
-$tablet: 768px;
+$mobileL: 430px;
+$tablet: 769px;
 $laptop: 1024px;
 $laptopL: 1366px;
 $laptopXL: 1920px;
