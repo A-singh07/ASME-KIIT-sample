@@ -15,18 +15,7 @@ body {
   }
 }
 
-.landing-slider {
-  .text-one {
-    font-family: $font_rotis_head;
-    // background: $bg_text-one;
-  }
 
-  @media screen and (max-width: $laptop) {
-    .text-one {
-      font-size: 3rem;
-    }
-  }
-}
 
 #nav {
 
@@ -318,8 +307,6 @@ section {
       color: grey;
     }
   }
-
-  a {}
 
   @media screen and (max-width: $tablet) {
     padding-left: 0;

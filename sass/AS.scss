@@ -184,10 +184,14 @@ hr {
           // background-color: burlywood;
           align-self: center;
           justify-self: center;
-          font-size: 1.1em;
+          font-size: 1rem;
           text-align: justify;
           font-weight: 500;
-          padding: 6%;
+          padding: 30px;
+
+          span {
+            margin-left: 70%;
+          }
         }
 
         @media screen and (max-width: $mobileL) {
@@ -211,6 +215,15 @@ hr {
             box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.2);
             border-radius: 1.4rem 0 1.4rem 0;
 
+            span {
+              margin-left: 60%;
+            }
+          }
+        }
+
+        @media screen and (max-width: $tablet) {
+          p span {
+            margin-left: 50%;
           }
         }
       }
