@@ -159,21 +159,26 @@
   }
 }
 
-.landing-cover {
-  @media screen and (max-width: $mobileL) {
-    height: 60vh;
-  }
+// .landing-cover {
+//   @media screen and (max-width: $mobileL) {
+//     height: 60vh;
+//   }
 
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  // background: $landing_cover;
-  background: black;
-  z-index: 40;
-  opacity: 0.4;
-}
+//   @media screen and (max-width: $mobileS) {
+//     background-color: aqua;
+
+//   }
+
+//   position: absolute;
+//   width: 100vw;
+//   height: 100vh;
+//   top: 0;
+//   left: 0;
+//   // background: $landing_cover;
+//   background: black;
+//   z-index: 40;
+//   opacity: 0.4;
+// }
 
 .landing-slider {
   height: 100vh;
@@ -809,6 +814,215 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+@media screen and (width: $mobileS) {
+  .team {
+    .more-team-images_btn {
+      right: 40%;
+    }
+  }
+
+  .content-container {
+    height: 100vh;
+  }
+
+  .sponsors {
+    position: relative;
+    top: 50px;
+  }
+
+  #team_bottom_hr {
+    margin-top: 250px;
+  }
+
+  .site-footer {
+    position: relative;
+    top: 100px;
+  }
+
+  .blogpost_btn {
+    a {
+      height: 40px;
+      width: 40px;
+
+      img {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+}
+
+@media screen and (width: 280px) {
+  .team {
+    .more-team-images_btn {
+      right: 38%;
+    }
+  }
+
+  .content-container {
+    height: 90vh;
+  }
+
+  .sponsors {
+    position: relative;
+    top: 50px;
+  }
+
+  #team_bottom_hr {
+    margin-top: 250px;
+  }
+
+  .site-footer {
+    position: relative;
+    top: 100px;
+  }
+
+  .blogpost_btn {
+    a {
+      height: 40px;
+      width: 40px;
+
+      img {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (width: 717px) and (height: 512px) {
+  #Achievements_hr {
+    margin-top: 50px;
+  }
+
+  #gallery_bottom_hr {
+    margin-top: 50px;
+  }
+
+  .content-container {
+    height: 120vh;
+  }
+
+  .sponsors {
+    position: relative;
+    top: 50px;
+  }
+
+  #team_bottom_hr {
+    margin-top: 350px;
+  }
+
+  .site-footer {
+    position: relative;
+    top: 100px;
+  }
+}
+
+@media screen and (min-width: 411px) and (max-width: 414px) {
+  .content-container {
+    height: 80vh;
+  }
+
+  .sponsors {
+    position: relative;
+    top: 50px;
+  }
+
+  #team_bottom_hr {
+    margin-top: 150px;
+  }
+
+  .team {
+    .more-team-images_btn {
+      right: 42%;
+    }
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: $mobileM) {
+  .content-container {
+    height: 90vh;
+  }
+
+  .sponsors {
+    position: relative;
+    top: 50px;
+  }
+
+  #team_bottom_hr {
+    margin-top: 200px;
+  }
+
+  .team {
+    .more-team-images_btn {
+      right: 40%;
+    }
+  }
+
+  .site-footer {
+    position: relative;
+    top: 100px;
+  }
+}
+
+@media screen and (width: 411px) and (height: 823px) {
+  .content-container {
+    height: 70vh;
+  }
+
+  .sponsors {
+    position: relative;
+    top: 50px;
+  }
+
+  #team_bottom_hr {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (width: $mobileM) and (height: 812px) {
+  .content-container {
+    height: 70vh;
+  }
+
+  #team_bottom_hr {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (width: 540px) and (height: 720px) {
+
+  .team {
+    height: 80vh;
+  }
+
+  .sponsors {
+    position: relative;
+    top: 50px;
+  }
+
+  .content-container {
+    height: 80vh;
+  }
+
+  .site-footer {
+    position: relative;
+    top: 150px;
+  }
+
+  #team_bottom_hr {
+    margin-top: 150px;
+  }
+}
+
+>>>>>>> b0bcb99... problems resolved
 // RIPPLE EFFECT
 
 .ripple {
