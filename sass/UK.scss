@@ -814,8 +814,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
 @media screen and (width: $mobileS) {
   .team {
     .more-team-images_btn {
@@ -1022,7 +1020,6 @@
   }
 }
 
->>>>>>> b0bcb99... problems resolved
 // RIPPLE EFFECT
 
 .ripple {
@@ -1067,5 +1064,19 @@
   100% {
     transform: scale(4);
     opacity: 0;
+  }
+}
+
+// JOIN US HTML
+
+.wrongtime_container {
+  width: 100%;
+
+  .wrongtime {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20%;
   }
 }

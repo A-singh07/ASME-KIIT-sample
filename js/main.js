@@ -64,7 +64,7 @@ tl.to(".intro", {
 //     tl.fromTo("#mother-container", { autoAlpha: "0", display: "none" }, { autoAlpha: "1", display: "block" }, "-=1");
 // }
 
-tl.fromTo("#mother-container", { autoAlpha: "0" }, { autoAlpha: "1" }, "-=1");
+tl.fromTo("#motsher-container", { autoAlpha: "0" }, { autoAlpha: "1" }, "-=1");
 
 if (window.matchMedia("(min-width: 800px)").matches) {
 
